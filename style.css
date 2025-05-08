@@ -161,6 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-size: 38px;
 }
 
 .quantity-control span {
@@ -168,16 +169,12 @@ body {
   font-weight: bolder;
 }
 
-.quantity-control-btn {
-  padding: 5px 10px;
-  font-size: 38px;
-  font-weight: bolder;
+.quantity-control span:hover {
   cursor: pointer;
-  border: none;
 }
 
-.quantity-control-btn:hover {
-  cursor: pointer;
+.quantity-control-btn{
+  border: none;
 }
 
 .transaction-cards {
@@ -203,11 +200,130 @@ body {
   font-size: 15px;
 }
 
-.transaction-details-rule img{
+.transaction-details-rule img {
   width: 30px;
   height: 30px;
 }
 
-.transaction-details-rule span{
-  color: #3385FF;
+.transaction-details-rule span {
+  color: #3385ff;
+}
+
+/* === Cart Drawer === */
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cart-drawer.open {
+  right: 0;
+}
+
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.drawer-overlay.show {
+  display: block;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f6a8;
+  padding: 10px;border-radius: 10px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-product {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-product img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.cart-info h4 {
+  text-align: center;
+}
+
+.cart-pricing {
+  display: flex;
+  gap: 10px;
+}
+
+.drawer-sale-price {
+  font-weight: bold;
+  color: green;
+}
+
+.drawer-compare-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+.cart-footer {
+  margin-top: 20px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  background: #1db469;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.checkout-btn:hover{
+  cursor: pointer;
 }

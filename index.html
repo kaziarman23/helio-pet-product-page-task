@@ -90,9 +90,13 @@
         <div class="pricing-submition">
           <button class="add-to-cart-btn">Add to Cart</button>
           <div class="quantity-control">
-            <button id="decrease" class="quantity-control-btn">-</button>
+            <button id="decrease" class="quantity-control-btn">
+              <span>-</span>
+            </button>
             <span id="quantity" class="quantity">1</span>
-            <button id="increase" class="quantity-control-btn">+</button>
+            <button id="increase" class="quantity-control-btn">
+              <span>+</span>
+            </button>
           </div>
         </div>
 
@@ -122,6 +126,41 @@
           </div>
         </div>
       </div>
+
+      <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+          <h3>Your cart</h3>
+          <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-product">
+          <img src="./public/hero_image_one.png" alt="Product Image" />
+          <div class="cart-info">
+            <h4>Helio Pet Device™</h4>
+           
+            <div class="quantity-control">
+              <button id="drawer-decrease" class="quantity-control-btn">
+                <span>-</span>
+              </button>
+              <span id="drawer-quantity">1</span>
+              <button id="drawer-increase" class="quantity-control-btn">
+                <span>+</span>
+              </button>
+              <button id="delete-item" class="delete-btn">Clear Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="total-price">
+            <p>Total:</p>
+            <div class="cart-pricing">
+              <span class="drawer-sale-price">$249.00</span>
+              <span class="drawer-compare-price">$369.00</span>
+            </div>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+      <div id="drawer-overlay" class="drawer-overlay"></div>
     </section>
     <script src="script.js"></script>
   </body>
