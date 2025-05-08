@@ -173,7 +173,7 @@ body {
   cursor: pointer;
 }
 
-.quantity-control-btn{
+.quantity-control-btn {
   border: none;
 }
 
@@ -209,7 +209,6 @@ body {
   color: #3385ff;
 }
 
-/* === Cart Drawer === */
 .cart-drawer {
   position: fixed;
   top: 0;
@@ -247,7 +246,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #f2f2f6a8;
-  padding: 10px;border-radius: 10px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .close-btn {
@@ -324,6 +324,137 @@ body {
   font-weight: bold;
 }
 
-.checkout-btn:hover{
+.checkout-btn:hover {
   cursor: pointer;
+}
+
+/* banner section css */
+
+.banner-section {
+  position: relative; 
+  background-image: url("./public/banner_one.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+
+.overlay-image {
+  position: absolute; 
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.overlay-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.2;
+}
+
+.overlay-image-two {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(18%, -60%);
+  width: 60%;
+  /* max-width: 500px; */
+  z-index: 2;
+}
+
+.overlay-image-two img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.2; 
+}
+
+.banner-content {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+.banner-headline {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.banner-subheading {
+  text-align: left;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.highlight {
+  color: #1db469;
+}
+
+.product-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 900px;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.feature-number {
+  display: inline;
+  padding: 10px;
+  border-radius: 100%;
+  color: white;
+  background-color: #1db469;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.key-benefits{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.benefit-highlight {
+  color: white;
+  background-color: #1DB469;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
 }
