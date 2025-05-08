@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  
-  <script ></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helio Pet Product</title>
+    <link rel="icon" href="./public/icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="hero-section">
+      <div class="hero-left">
+        <img
+          src="./public/hero_image_one.png"
+          alt="Hero image One"
+          class="main-image"
+        />
+        <div class="thumbnail-row">
+          <img
+            src="./public/hero_image_two.png"
+            alt="hero image two"
+            class="thumbnail"
+          />
+          <img
+            src="./public/hero_image_three.jpg"
+            alt="hero image three"
+            class="thumbnail"
+          />
+          <img
+            src="./public/hero_image_four.png"
+            alt="hero image four"
+            class="thumbnail"
+          />
+          <img
+            src="./public/hero_image_five.png"
+            alt="hero image five"
+            class="thumbnail"
+          />
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <span class="badge">Best Seller</span>
+        <div class="stars-reviews">
+          <span class="stars">★★★★★</span>
+          <span class="rating-score">4.9</span>
+          <span class="review-count">(1,021 reviews)</span>
+        </div>
+        <h2 class="product-title">Helio Pet Device™</h2>
+        <div class="author">
+          <img
+            class="author-profile"
+            src="./public/author_image.jpg"
+            alt="author profile"
+          />
+          <p class="author-comment">
+            <q>
+              We are BOTH so THANKFUL! I purchased this for my 12 year old Lab
+              mix as he's got mobility issues with the back legs. It's been 3
+              weeks and already a difference!
+            </q>
+          </p>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>
+              <img src="./public/hero-check-image.svg" alt="check svg" />
+              <span> Reduce aches & pains with 5-minute sessions. </span>
+            </li>
+            <hr />
+            <li>
+              <img src="./public/hero-check-image.svg" alt="check svg" />
+              <span>
+                Cold Laser Therapy helps with Pain, Inflammation & more.
+              </span>
+            </li>
+            <hr />
+            <li>
+              <img src="./public/hero-check-image.svg" alt="check svg" />
+              <span> Professional Grade LLLT with 5 Laser Diodes. </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pricing">
+          <span class="compare-price">$369.00</span>
+          <span class="sale-price">$249.00</span>
+        </div>
+
+        <div class="pricing-submition">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <div class="quantity-control">
+            <button id="decrease" class="quantity-control-btn">-</button>
+            <span id="quantity" class="quantity">1</span>
+            <button id="increase" class="quantity-control-btn">+</button>
+          </div>
+        </div>
+
+        <div class="transaction">
+          <div class="transaction-cards">
+            <img src="./public/amex-card.jpg" alt="amex-card" />
+            <img src="./public/visa-card.png" alt="visa-card" />
+            <img src="./public/master-card.jpg" alt="master-card" />
+            <img src="./public/paypal-card.jpg" alt="paypal-card" />
+            <img src="./public/discover-card.jpg" alt="discover-card" />
+          </div>
+          <div class="transaction-details">
+            <div class="transaction-details-rule">
+              <img
+                src="./public/lucide_shield-check.png"
+                alt="carbon_delivery-parcel"
+              />
+              <p><span>30 day money back</span> guarantee</p>
+            </div>
+            <div class="transaction-details-rule">
+              <img
+                src="./public/carbon_delivery-parcel.png"
+                alt="carbon_delivery-parcel"
+              />
+              <p>Expected <span>delivery in 2-4</span> business days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
