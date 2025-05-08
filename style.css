@@ -331,7 +331,7 @@ body {
 /* banner section css */
 
 .banner-section {
-  position: relative; 
+  position: relative;
   background-image: url("./public/banner_one.png");
   background-size: cover;
   background-position: center;
@@ -345,7 +345,7 @@ body {
 }
 
 .overlay-image {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 60%;
   transform: translate(-50%, -50%);
@@ -375,7 +375,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  opacity: 0.2; 
+  opacity: 0.2;
 }
 
 .banner-content {
@@ -442,7 +442,7 @@ body {
   line-height: 1.5;
 }
 
-.key-benefits{
+.key-benefits {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -452,9 +452,127 @@ body {
 
 .benefit-highlight {
   color: white;
-  background-color: #1DB469;
+  background-color: #1db469;
   font-weight: bold;
   padding: 10px;
   border-radius: 30px;
   text-align: center;
+}
+
+/* review section css */
+
+.review-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.review-heading {
+  text-align: left;
+  font-weight: bolder;
+  color: #0b1d49;
+}
+
+.review-stats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-score {
+  color: #0b1d49;
+}
+
+
+
+.review-image-grid {
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 20px;
+}
+
+.review-image-grid img {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.review-title {
+  color: #0b1d49;
+  border-bottom: 5px solid #0b1d49;
+  display: inline;
+}
+
+.line{
+  margin-top: 4px;
+  width: 100%;
+  background-color: #b4b3b3;
+  height: 1px;
+}
+.review-card {
+  max-width: 600px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-avatar {
+  color: white;
+  background-color: #0b1d49;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.reviewer-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.reviewer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: top;
+  gap: 5px;
+}
+
+.review-badge{
+  color: #11a55b; 
+  text-align: left; 
+  display: inline-block; 
+  margin-bottom: 20px;
+}
+
+.review-rating {
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-rating img {
+  width: 50%;
+}
+
+.review-rating span{
+  color: black;
+  font-weight: bolder;
+}
+
+.review-image img{
+  max-width:400px;
+  width: 20%;
+  height: 20%;
+  border-radius: 10px;
 }
