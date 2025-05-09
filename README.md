@@ -1,7 +1,6 @@
 # 🐾 Helio Pet Product Page + Cart Drawer (Internship Task)
 
-🔗 **[Live Preview](https://your-deployment-link.com)**  
-
+🔗 **[Live Preview](https://kaziarman23.github.io/helio-pet-product-page-task)**
 
 ## 📌 Task Overview
 
@@ -20,15 +19,6 @@ This project is a submission for an internship task where I was asked to replica
 - ✅ Persistent cart state using `localStorage` (retained on page refresh).
 - ✅ Follows the restriction: **Raw HTML, CSS, JavaScript only** — no frameworks or libraries used.
 
-## 📁 File Structure
-
-helio-pet-cart/
-├── index.html # Main HTML file (Product page)
-├── style.css # All styles written manually
-├── script.js # All cart logic and interactivity
-├── public/ # Contains all images used in the project
-└── README.md # Project documentation
-
 ## 🛠 Features
 
 - Responsive design
@@ -46,4 +36,3 @@ helio-pet-cart/
 ---
 
 🔧 Made with 💻 by [Kazi Arman]
-
