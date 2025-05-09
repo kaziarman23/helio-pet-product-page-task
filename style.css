@@ -227,7 +227,7 @@ body {
 
 .transaction-cards {
   display: flex;
-  justify-content: space-evenly;
+  
   align-items: center;
   max-width: 50%;
 }
@@ -415,7 +415,6 @@ body {
   right: 0;
   transform: translate(18%, -60%);
   width: 60%;
-  /* max-width: 500px; */
   z-index: 2;
 }
 
@@ -527,8 +526,13 @@ body {
   gap: 10px;
 }
 
+.review-summary{
+  max-width: 250px;
+}
+
 .rating-score {
   color: #0b1d49;
+  font-size: 38px;
 }
 
 .review-image-grid {
@@ -559,6 +563,7 @@ body {
   background-color: #b4b3b3;
   height: 1px;
 }
+
 .review-card {
   max-width: 600px;
 }
@@ -608,7 +613,7 @@ body {
 }
 
 .review-rating img {
-  width: 50%;
+  width: 80%;
 }
 
 .review-rating span {
